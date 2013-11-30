@@ -1,9 +1,9 @@
 #!/bin/bash
 #
-# This script will toggle the funcationality of your Synaptics touchpad,
-# restarting syndaemon as needed, and sending a desktop notification
-# event for some visual feedback. It is even more useful when run via a
-# custom keyboard binidng.
+# This script will toggle the functionality of your Synaptics touchpad,
+# restarting syndaemon as needed, and send a desktop notification event
+# for some visual feedback. It is even more useful when run via a custom
+# keyboard binidng.
 
 idle_time=1.2 # seconds
 

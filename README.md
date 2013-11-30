@@ -18,7 +18,7 @@ sgarman at zenlinux dot com
 Touchpad Support
 ================
 
-The out of box touchpad experience leaves a lot to be desired. The touchpad acts very jumpy and unstable, and the GNOME acceleration and sensitivity settings do not appear to have much impact. The first thing you'll want to do is disable GNOME/Cinnamon control of the touchpad settings. Install the dconf-editor with:
+The out of box touchpad experience leaves a lot to be desired. The touchpad acts very jumpy and unstable, and the GNOME acceleration and sensitivity settings do not appear to have much impact. The first thing you'll want to do is disable GNOME/Cinnamon control of the touchpad settings so it doesn't conflict with your customizations. Install the dconf-editor with:
 
 	sudo apt-get install dconf-editor
 
