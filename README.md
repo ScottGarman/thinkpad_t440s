@@ -15,6 +15,15 @@ Happy hacking!
 Scott Garman
 sgarman at zenlinux dot com
 
+Suspend/Resume Issues
+=====================
+
+I found that when waking from suspend, sometimes my system would intermittently re-suspend within a couple of seconds. Pressing the power button would wake it up again and then it would work fine. If you encounter this, a fix for it appears to be to edit your /etc/systemd/logind.conf file and uncomment the HandleLidSwitch line, setting it to:
+
+	HandleLidSwitch=ignore
+
+Apparently there is some kind of race condition between systemd's lid event detection and another subsystem, so this is disabling systemd's monitoring of lid events. 
+
 Touchpad Support
 ================
 
