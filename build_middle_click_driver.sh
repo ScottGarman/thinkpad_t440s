@@ -37,7 +37,7 @@ cd ..
 sudo dpkg -i xserver-xorg-input-evdev_*.deb
 sudo apt-get remove xserver-xorg-input-synaptics
 
-sudo mkdir /etc/X11/xorg.conf.d/
+sudo mkdir -p /etc/X11/xorg.conf.d/
 sudo cp arch/90-evdev-trackpoint.conf /etc/X11/xorg.conf.d
 
 echo If everything was OK, than logout/reboot and enjoy fully working ThinkPad Trackpoint/ClickPad
