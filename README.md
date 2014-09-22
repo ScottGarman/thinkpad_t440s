@@ -75,3 +75,10 @@ Changes to these settings will be lost upon rebooting. To make them permanent, a
 To learn more about the Synaptics Touchpad settings, see:
 
 http://linux.die.net/man/5/synaptics
+
+TrackPoint Middle ClickPad Scrolling
+====================================
+
+Out of the box, the Trackpoint driver does not support scrolling when the middle ClickPad "button" is clicked. An Arch user (esrevinu) made a driver for Arch Linux which supports this functionality, and subsequently some Ubuntu users on Launchpad (dalcde, T_send) wrote a script to help install this driver and its dependencies on Ubuntu. To build and install the driver, you can run the `build_middle_click_driver.sh` script. Note that there may be some conflicts with the `99-synaptics-t440s.conf` configuration file in this repo, so you may need to adjust that.
+
+You can see the full discussion on [Launchpad](https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-input-evdev/+bug/1246683).
